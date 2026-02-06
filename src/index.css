@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
   --primary: #1a4da1;
   /* Disney Royal Blue */
@@ -341,5 +343,3 @@ header h1 {
     font-size: 3rem;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
