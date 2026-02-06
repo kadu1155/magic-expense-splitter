@@ -192,8 +192,8 @@ app.post('/api/ai/parse', async (req, res) => {
     }
 });
 
-// Final catch-all to serve index.html for any client-side routes
-app.get('*', (req, res) => {
+// Final catch-all to serve index.html for any client-side routes (Express 5 compatible)
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 

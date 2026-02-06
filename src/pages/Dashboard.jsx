@@ -3,7 +3,7 @@ import ManualExpenseForm from '../components/ManualExpenseForm';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 
-const API_BASE = window.location.origin === 'http://localhost:5173' ? 'http://localhost:5000/api' : '/api';
+const API_BASE = '/api';
 
 function Dashboard() {
     const [users, setUsers] = useState([]);
