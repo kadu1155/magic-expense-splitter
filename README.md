@@ -17,11 +17,25 @@ A full-stack, AI-powered expense management application with a whimsical Disney 
 - **Styling**: Vanilla CSS (Modern Glassmorphism)
 
 ## 🚀 Local Setup
-1. Clone the repository.
-2. Run `npm install-all` to install frontend and backend dependencies.
-3. Create a `.env` file in the `server` folder and add your `GEMINI_API_KEY`.
-4. Run `npm run dev` to start the frontend.
-5. In a new terminal, run `cd server && node index.js` to start the backend.
+
+1. **Clone the repository.**
+2. **Install Dependencies**: Run `npm run install-all` from the root to install both frontend and backend dependencies.
+3. **Environment Setup**: Create a `.env` file in the `server` folder and add your `GEMINI_API_KEY`. See `server/.env.example` for reference.
+
+> [!IMPORTANT]
+> **This project requires TWO separate terminal windows to run locally:**
+
+4. **Terminal 1 (Backend)**:
+   ```bash
+   cd server
+   npm start
+   ```
+5. **Terminal 2 (Frontend)**:
+   ```bash
+   npm run dev
+   ```
+
+Now open the URL shown in Terminal 2 (usually `http://localhost:5173`) to see the magic! ✨
 
 ## 🧞‍♂️ Deployment
 This project is configured for easy deployment on **Render**. For detailed steps, see the `deployment_guide.md` in the project root.
